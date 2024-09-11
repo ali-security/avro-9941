@@ -38,6 +38,7 @@ jobs:
     name: Java ${{ matrix.java }} Test
     runs-on: ubuntu-22.04
     strategy:
+      fail-fast: false
       matrix:
         java:
         - '8'
